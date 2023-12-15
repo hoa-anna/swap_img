@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <!--https://www.figma.com/file/BWIcPBJMU19hKXi8Q4Lwqz/Untitled?type=design&node-id=3%3A3&mode=design&t=w1qozeyr8PlnVsLs-1-->
+                                                            <!--Adobe link-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Swap COGS JS Quizzette</title>
+    <style>
+        #MyContainer {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="MyContainer">
+        <img id="myBeverage" src="HW_images/tea.jpg" alt="favorite beverage" width="350">
+
+        <button onclick="swapImage()" >Swap My Beverage</button>
+    </div>
+        <script>
+            function swapImage() {
+                var image = document.getElementById('myBeverage');
+                if (image.src.match("HW_images/coffeeTime.jpg")) {
+                    image.src = "HW_images/tea.jpg";
+            } else {
+                image.src ="HW_images/coffeeTime.jpg";
+            }
+            }        
+        </script>
+  </body>
+</html>
